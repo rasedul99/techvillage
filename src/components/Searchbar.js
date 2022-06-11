@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { HiSearch } from "react-icons/hi";
 const Searchbar = () => {
   const [text, settext] = useState("");
   const onChange = (q) => {
@@ -18,7 +20,6 @@ const Searchbar = () => {
           autoFocus
         />
       </form>
-      
     </div>
   );
 };
