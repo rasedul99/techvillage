@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Searchbar from "../components/Searchbar";
+import Searchbar from "../../components/Searchbar";
 import Product from "./Product";
 
 const Products = () => {

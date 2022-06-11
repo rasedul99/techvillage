@@ -1,4 +1,4 @@
-import polo from "../Assets/one.jpg";
+import polo from "../../Assets/one.jpg";
 const Product = ({ id, product }) => {
   return (
     <div>

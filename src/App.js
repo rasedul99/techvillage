@@ -1,5 +1,5 @@
 import Dashboard from "./pages/DashBoard/DashBoard";
-import Products from "./pages/Products";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (

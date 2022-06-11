@@ -1,12 +1,35 @@
-import { AiOutlineDelete } from "react-icons/ai";
 import { BsPersonCircle, BsPlusCircle } from "react-icons/bs";
 import { FiEdit } from "react-icons/fi";
-import { HiMinusCircle, HiPlusCircle } from "react-icons/hi";
-import "./DashBoard.css";
-
+import OrderList from "../../components/OrderList";
 const Dashboard = () => {
   return (
     <div>
+      <div className="flex justify-between m-5">
+        <div className="flex  bg-primary p-3 rounded">
+          <div className="mx-2">
+            <FiEdit />
+          </div>
+          <div>Note</div>
+        </div>
+        <div className="flex  bg-primary p-3">
+          <span className="mx-2">
+            <FiEdit />
+          </span>
+          <span>Note</span>
+        </div>
+        <div className="flex  bg-primary p-3">
+          <span className="mx-2">
+            <FiEdit />
+          </span>
+          <span>Note</span>
+        </div>
+        <div className="flex  bg-primary p-3">
+          <span className="mx-2">
+            <FiEdit />
+          </span>
+          <span>Note</span>
+        </div>
+      </div>
       <div className="flex justify-between  py-5 rounded-sm bg-secondary text-blue-600/75">
         <h3 className="text-2xl mx-3">
           <BsPersonCircle />
@@ -17,27 +40,19 @@ const Dashboard = () => {
         </h3>
       </div>
       <div className="my-3">
-        <ul>
-          <li>
-            <span className="inline text-2xl">
-              <FiEdit />
-            </span>
-            <div className="border inline-block py-3">
-              <span> Pure White & Black Sleeve</span>
-              <span>$91.00</span>
-              <span className="inline">
-                <HiPlusCircle />
-              </span>
-              <span>1</span>
-              <span className="inline">
-                <HiMinusCircle />
-              </span>
-            </div>
-            <span className="inline text-2xl">
-              <AiOutlineDelete />
-            </span>
-          </li>
-        </ul>
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
+        <OrderList />
       </div>
     </div>
   );
