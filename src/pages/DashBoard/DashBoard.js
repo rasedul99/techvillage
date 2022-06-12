@@ -1,7 +1,7 @@
 import { BsPersonCircle, BsPlusCircle } from "react-icons/bs";
 import { FiEdit } from "react-icons/fi";
 import OrderList from "../../components/OrderList";
-const Dashboard = () => {
+const Dashboard = ({ setShowModal }) => {
   return (
     <div>
       <div className="flex justify-between m-5">
@@ -35,9 +35,9 @@ const Dashboard = () => {
           <BsPersonCircle />
         </h3>
         <span className="text-xl mx-3 flex-1 ">Rasedul Islam</span>
-        <h3 className="text-2xl mx-3 ">
+        <button className="text-2xl mx-3" onClick={() => setShowModal(true)}>
           <BsPlusCircle />
-        </h3>
+        </button>
       </div>
       <div className="my-3">
         <OrderList />

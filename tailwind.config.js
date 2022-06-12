@@ -8,7 +8,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#F4F6F8",
+          primary: "#570DF8",
 
           secondary: "#EEF0F9",
 
@@ -25,10 +25,11 @@ module.exports = {
           warning: "#FBBD23",
 
           error: "#F87272",
+
+          Blue: "#570DF8",
         },
       },
     ],
   },
   plugins: [require("daisyui")],
 };
-
