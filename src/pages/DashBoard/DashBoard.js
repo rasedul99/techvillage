@@ -1,19 +1,42 @@
 import { BsPersonCircle, BsPlusCircle } from "react-icons/bs";
 import { FiEdit } from "react-icons/fi";
-import { GiCancel } from "react-icons/gi";
+import { GiCancel, GiHamburgerMenu } from "react-icons/gi";
 import IconWithText from "../../components/IconWithText";
 import OrderList from "../../components/OrderList";
 const Dashboard = ({ setShowModal }) => {
   return (
     <div className="px-2">
       <div className="flex justify-between my-3">
-        <IconWithText icon={<FiEdit />} title="Note" />
-        <IconWithText icon={<FiEdit />} title="Note" />
-        <IconWithText icon={<FiEdit />} title="Note" />
-        <IconWithText icon={<FiEdit />} title="Note" />
+        <button class="text-2xl">
+          <GiHamburgerMenu />
+        </button>
+        <IconWithText
+          icon={<FiEdit />}
+          title="Note"
+          bgColor="bg-[#E7E9F6]"
+          textColor="text-[#5C6AC4]"
+        />
+        <IconWithText
+          icon={<FiEdit />}
+          title="Shipping"
+          bgColor="bg-[#E7E9F6]"
+          textColor="text-[#5C6AC4]"
+        />
+        <IconWithText
+          icon={<FiEdit />}
+          title="Hold Orders"
+          bgColor="bg-[#E7E9F6]"
+          textColor="text-[#5C6AC4]"
+        />
+        <IconWithText
+          icon={<FiEdit />}
+          title="New Item"
+          bgColor="bg-[#E7E9F6]"
+          textColor="text-[#5C6AC4]"
+        />
       </div>
       <div
-        className="flex justify-between  py-5 rounded-sm bg-secondary text-blue-600/75"
+        className="flex justify-between  py-3 rounded-sm bg-secondary text-blue-600/75"
         onClick={() => setShowModal(true)}
       >
         <h3 className="text-2xl mx-3">
@@ -55,19 +78,39 @@ const Dashboard = ({ setShowModal }) => {
         </div>
       </div>
 
-      <div className="flex justify-between px-2  py-4 rounded-sm bg-secondary text-blue-600/75">
-        <h3 className="text-2xl  basis-7/12 ">Products Count (13)</h3>
-        <div className="basis-5/12 flex justify-between  items-center">
-          <span className="text-xl  ">Total</span>
-          <span className="">$5005.50</span>
+      <div className="flex justify-between items-center px-2  py-3 rounded-sm bg-secondary text-blue-600/75">
+        <h3 className="text-sm  basis-7/12 ">Products Count (13)</h3>
+        <div className="basis-5/12 flex justify-between items-center">
+          <span className="text-xl  ml-3">Total</span>
+          <span>$5005.50</span>
         </div>
       </div>
 
       <div className="flex justify-between my-5">
-        <IconWithText icon={<GiCancel />} title="Cancel" />
-        <IconWithText icon={<GiCancel />} title="Cancel" />
-        <IconWithText icon={<GiCancel />} title="Cancel" />
-        <IconWithText icon={<GiCancel />} title="Cancel" />
+        <IconWithText
+          icon={<GiCancel />}
+          title="Cancel"
+          bgColor="bg-[#FADEDD]"
+          textColor="text-[#EF9D9A]"
+        />
+        <IconWithText
+          icon={<GiCancel />}
+          title="Hold"
+          bgColor="bg-[#DEE1F3]"
+          textColor="text-[#5C6AC4]"
+        />
+        <IconWithText
+          icon={<GiCancel />}
+          title="Discount"
+          bgColor="bg-[#DEE1F3]"
+          textColor="text-[#5C6AC4]"
+        />
+        <IconWithText
+          icon={<GiCancel />}
+          title="Pay Now"
+          bgColor="bg-[#DEE1F3]"
+          textColor="text-[#5C6AC4]"
+        />
       </div>
     </div>
   );

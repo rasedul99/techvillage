@@ -10,9 +10,9 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div>
+    <div className="bg-[#F4F6F8]">
       <Searchbar />
-      <div className="grid md:grid-cols-5 my-5 gap-3">
+      <div className="grid md:grid-cols-5 my-5 gap-3 ">
         {products.map((product) => {
           return <Product key={product.id} product={product} />;
         })}

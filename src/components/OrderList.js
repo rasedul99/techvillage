@@ -12,14 +12,17 @@ const OrderList = () => {
         <div className=" flex w-full items-center justify-between border p-2 text-gray-500">
           <span> Pure White & Black Sleeve</span>
           <span>$91.00</span>
-          <span className="text-2xl">
-            <HiMinusCircle />
-          </span>
+          <div className="flex">
+            <span className="text-2xl mx-2">
+              <HiMinusCircle />
+            </span>
 
-          <span>1</span>
-          <span className="text-2xl">
-            <HiPlusCircle />
-          </span>
+            <span>1</span>
+            <span className="text-2xl mx-2">
+              <HiPlusCircle />
+            </span>
+          </div>
+
           <span>$91.00</span>
         </div>
         <span className=" text-2xl mx-1 text-red-400">
