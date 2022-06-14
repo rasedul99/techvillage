@@ -3,11 +3,11 @@ import { FiEdit } from "react-icons/fi";
 import { GiCancel, GiHamburgerMenu } from "react-icons/gi";
 import IconWithText from "../../components/IconWithText";
 import OrderList from "../../components/OrderList";
-const Dashboard = ({ setShowModal }) => {
+const Dashboard = ({ setShowModal, setShowNavbar }) => {
   return (
     <div className="px-2">
       <div className="flex justify-between my-3">
-        <button class="text-2xl">
+        <button class="text-2xl" onClick={() => setShowNavbar(true)}>
           <GiHamburgerMenu />
         </button>
         <IconWithText

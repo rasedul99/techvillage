@@ -19,7 +19,7 @@ const Searchbar = () => {
         class="input text-xl  bg-transparent w-full"
         value={text}
         onChange={(e) => onChange(e.target.value)}
-        autoFocus
+       
       />
 
       <div className="mx-3">
