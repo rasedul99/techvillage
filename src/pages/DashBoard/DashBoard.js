@@ -86,7 +86,7 @@ const Dashboard = ({ setShowModal, setShowNavbar }) => {
         </div>
       </div>
 
-      <div className="flex justify-between my-5">
+      <div className="flex justify-between my-2">
         <IconWithText
           icon={<GiCancel />}
           title="Cancel"

@@ -1,6 +1,6 @@
 import { BsPlus } from "react-icons/bs";
 import { MdArrowBackIos } from "react-icons/md";
-const PlusIconModal = ({ setShowModal }) => {
+const AddCustomerModal = ({ setShowModal }) => {
   return (
     <div>
       <div class="card w-96 bg-base-100 shadow-xl">
@@ -57,4 +57,4 @@ const PlusIconModal = ({ setShowModal }) => {
   );
 };
 
-export default PlusIconModal;
+export default AddCustomerModal;

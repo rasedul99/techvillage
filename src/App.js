@@ -1,7 +1,7 @@
 import { useState } from "react";
+import AddCustomerModal from "./components/AddCustomerModal";
 import AllCategories from "./components/AllCategories";
 import Navbar from "./components/Navbar";
-import PlusIconModal from "./components/PlusIconModal";
 import Dashboard from "./pages/DashBoard/DashBoard";
 import Products from "./pages/Products/Products";
 
@@ -31,7 +31,7 @@ function App() {
           </div>
         </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          {showModal && <PlusIconModal setShowModal={setShowModal} />}
+          {showModal && <AddCustomerModal setShowModal={setShowModal} />}
         </div>
       </div>
     </div>
